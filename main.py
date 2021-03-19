@@ -3,11 +3,13 @@ import random
 
 
 def cls():
+    """Ф-я чистит консоль при рестарте игры"""
     for num in range(1, 100):
         print("\n")
 
 
 def game_over():
+    """Ф-я конца игры при проигрыше"""
     print("""
         ╔═══╗╔═══╗╔═╗╔═╗╔═══╗     ╔═══╗╔╗──╔╗╔═══╗╔═══╗
         ║╔═╗║║╔═╗║║║╚╝║║║╔══╝     ║╔═╗║║╚╗╔╝║║╔══╝║╔═╗║
@@ -30,6 +32,7 @@ def game_over():
 
 
 def win():
+    """Ф-я конца игры при победе"""
     print()
     print()
     print()
@@ -48,6 +51,7 @@ def win():
 
 
 def _initial_():
+    """Начало"""
     ans = input('Начнем? (да/нет) ').lower()
     if ans == 'да':
         print()
@@ -74,6 +78,7 @@ def _initial_():
 
 
 def begin():
+    """Выбор предметов"""
     print()
     print()
     print()
@@ -120,6 +125,7 @@ def begin():
 
 
 def first_lvl():
+    """Первая локация"""
     print()
     print()
     print()
@@ -194,6 +200,7 @@ def first_lvl():
 
 
 def right_t():
+    """Локация: правый тоннель"""
     print()
     print()
     print()
@@ -209,6 +216,7 @@ def right_t():
 
 
 def left_t():
+    """Локация: левый тоннель"""
     print()
     print()
     print()
@@ -293,6 +301,7 @@ def left_t():
 
 
 def ask():
+    """Игра-опрос Золтана из локации: левый тоннель """
     print()
     print()
     print()
@@ -327,6 +336,7 @@ def ask():
 
 
 def rope():
+    """Решение о покупке веревки у Золтана из локации: левый тоннель"""
     time.sleep(2)
     global ver
     if ver == 1:
